@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS : Information</title>
+    <link rel="stylesheet" href="01-Style.css">
+</head>
+<body>
+
+<pre>
+
+<h1>CSS stands for Cascading Style Sheets.</h1>
+It is a stylesheet language used to control the look and layout of web pages written in HTML.
+
+HTML structures the content, and CSS styles it (colors, fonts, spacing, positioning, animations, etc.).
+
+🧠 Why Use CSS?
+Reason	Explanation
+🎨 Styling	Changes text color, background, fonts, borders, etc.
+📐 Layout Control	Position elements, create columns, grids, and responsive design
+🔁 Reusability	One CSS file can style many HTML pages
+⚡ Faster Development	Saves time and effort with consistent design
+📱 Responsive Design	Adapts layout for mobile, tablet, desktop
+🎞️ Animations & Effects	Create transitions, hover effects, keyframe animations
+
+✅ Types of CSS
+Type	Description	Example
+Inline CSS	Inside HTML tag using style attribute	&lt;p style="color:red;">Text&lt;/p>
+Internal CSS	Inside &lt;style> tag in the &lt;head>	&lt;style>p { color: red; }&lt;/style>
+External CSS	In a separate .css file	&lt;link rel="stylesheet" href="style.css">
+
+✅ Basic CSS Syntax
+css
+Copy
+Edit
+selector {
+  property: value;
+}
+Example:
+css
+Copy
+Edit
+h1 {
+  color: blue;
+  font-size: 30px;
+}
+✅ CSS Selectors
+Selector	Example	Description
+Element	p {}	Targets all &lt;p> tags
+Class	.box {}	Targets all elements with class box
+ID	#main {}	Targets the element with id main
+Group	h1, p {}	Styles both h1 and p
+Descendant	div p {}	Styles p inside div
+Pseudo	a:hover {}	Styles links on hover
+
+✅ Common CSS Properties
+Property	Use
+color	Text color
+background-color	Background color
+font-size	Size of text
+font-family	Font style
+margin	Space outside element
+padding	Space inside element
+border	Outline around element
+width, height	Element size
+display	Block, inline, flex, grid, etc.
+position	static, relative, absolute, fixed
+
+✅ Example: Full CSS Usage
+HTML:
+html
+Copy
+Edit
+
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+&lt;meta charset="UTF-8">
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+&lt;title>CSS Example&lt;/title>
+    <strong>Link CSS to the HTML Page</strong>
+    &lt;link rel="stylesheet" href="style.css">
+&lt;/head>
+&lt;body>
+  &lt;h1 class="title">Hello CSS</h1>
+  &lt;p>This is styled with CSS.</p>
+&lt;/body>
+&lt;/html>
+CSS (style.css):
+css
+Copy
+Edit
+body {
+  background-color: lightyellow;
+  font-family: Arial;
+}
+
+.title {
+  color: green;
+  text-align: center;
+  font-size: 40px;
+}
+
+p {
+  color: #333;
+  margin: 20px;
+}
+🔄 CSS vs HTML
+Feature	HTML	CSS
+Purpose	Structure	Style
+Type	Markup Language	Stylesheet Language
+Role	Defines content	Controls appearance
+Tags vs Rules	Uses tags (&lt;h1>, &lt;p>)	Uses rules (h1 {})
+</pre>
+</body>
+</html>

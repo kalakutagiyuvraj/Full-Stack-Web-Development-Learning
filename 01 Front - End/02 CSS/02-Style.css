@@ -1,0 +1,12 @@
+.External
+{
+    color: yellow;
+    background-color: hotpink;
+    border: 6px solid black;
+}
+h1
+{
+    color: hotpink;
+    background-color: red;
+    border: 6px solid black;
+}

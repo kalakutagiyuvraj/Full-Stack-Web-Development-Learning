@@ -1,0 +1,43 @@
+/* Universal Selector */
+*
+{
+    background-color: hotpink;
+}
+/* Class selector */
+.selector 
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+}
+
+/* ID Selector */
+#num1
+{
+    font-weight: bold;
+}
+/* Group Selector */
+#num2, #num3{
+    font-style: italic;
+    color: yellow;
+}
+/* Descendant Selector */
+div ul #num4
+{
+    font-weight: bolder;
+    color: white;
+}
+/* pseudo selector */
+#num3:hover
+{
+    color: blue;
+}
+/* child selector */
+ul > li
+{
+    border: 2px solid lemonchiffon;
+}
+/* Element selectors */
+h1{
+    color: hotpink;
+    background-color: yellow;
+}
