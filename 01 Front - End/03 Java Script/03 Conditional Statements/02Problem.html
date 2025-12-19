@@ -1,0 +1,33 @@
+<!--1. Grade Calculator**
+Write a program that takes marks (0–100) and prints:
+* **A** → 90–100
+* **B** → 75–89
+* **C** → 50–74
+* **D** → 35–49
+* **Fail** → < 35 Use **if–else if–else**. --- ## -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+</head>
+<body>
+    <h2>Grade Calculator</h2>
+    <script>
+        let marks = Number(prompt(`Enter marks : `));
+        if(marks >= 90 && marks <=100){
+            console.log("A Grade");
+        }
+        else if(marks >= 75 && marks <=89){
+            console.log("B Grade");
+        }else if(marks >= 50 && marks <=74){
+            console.log("C Grade");
+        }else if(marks >= 35 && marks <=49){
+            console.log("D Grade");
+        }else{
+            console.log("How dare you to enter that cheap marks, you failure.");
+        }
+    </script>
+</body>
+</html>

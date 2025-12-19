@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS : Functions</title>
+</head>
+
+<body>
+    <h1>Welcome</h1>
+    <script>
+
+        // Defualt without returntype
+        function print() {
+            document.write("Welcmoe we are going to learn functions here.");
+        }
+        print();
+
+        // Defualt with returntype
+        function write() {
+            return "</br>We are writing our name in Defualt with returntype";
+        }
+        document.writeln(write());
+
+        // Parameterized without returntype
+
+        function add(a, b) {
+            document.write("</br>a + b = " + (a + b));
+        }
+        add(4, 6)
+
+
+        // Parameterized with returntype
+
+        function checkEven(num) {
+            isEven = true;
+            if (num % 2 == 0) {
+                return isEven;
+            }
+            else {
+                return isEven = false;
+            }
+        }
+        isEven = checkEven(10);
+        document.write("</br>" + isEven);
+    </script>
+</body>
+
+</html>

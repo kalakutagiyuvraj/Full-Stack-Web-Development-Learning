@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        // it is normal function which is passed as an parameter in 
+        function show(){
+            document.write("Show is calling....<br>");
+        }
+
+        function disp(calling){
+            calling();
+            document.write("Disp is Callling & Show Became a callback function.<br>");
+            calling();
+        }
+
+        disp(show);
+
+    </script>
+</body>
+</html>

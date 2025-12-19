@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Loops In Array</h1>
+
+    <script>
+        // For loops
+        var arr = [1, "Apple", 2, "Ball", 3, "Cat", 4, "Dog"]
+        for(i = 0; i<arr.length; i++){
+            document.write("<br>"+arr[i])
+        }
+        document.write("<hr>")
+
+        // for of loop : Give Output : Value only.
+        for(i of arr){
+            document.write("<br>"+i)
+        }
+        document.write("<hr>")
+
+        // for in loops : give output : index numbers.
+        for(i in arr){
+            document.write("<br>"+i)
+        }
+    </script>
+</body>
+</html>

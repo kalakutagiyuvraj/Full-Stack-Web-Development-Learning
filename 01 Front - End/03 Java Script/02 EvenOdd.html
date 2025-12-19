@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statements</title>
+</head>
+<body>
+    <h1>
+        Even Odd Using Conditional Statements
+    </h1>
+
+    <script>
+        var x = 14;
+        document.write("<pre>")
+            if(x % 2 == 0){
+                document.write("Even");
+                if(x % 7 == 0){
+                    document.write("\ndivided by 7.");
+                }
+            }
+            else{
+                document.write("odd");
+            }
+        document.write("</pre>");
+    </script>
+</body>
+</html>

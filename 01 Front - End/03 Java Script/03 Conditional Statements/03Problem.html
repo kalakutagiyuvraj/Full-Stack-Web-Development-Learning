@@ -1,0 +1,45 @@
+<!-- 3. Check Login** Take a username and password: * If username=`"admin"` and
+password=`"1234"` → print **Login Successful** * If username matches but password doesn’t → **Wrong Password** *
+If username doesn’t match → **User not found** --- ## -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Login</title>
+</head>
+
+<body>
+    <h2>Check Login</h2>
+    <form>
+        <input type="text" placeholder="Enter user name..." name="user" id="user" value="username">
+        <input type="password" name="pass" id="pass" value="abc">
+        <input type="submit" placeholder="submit">
+    </form>
+    <h2>Check Login</h2>
+    <form onsubmit="checkLogin(event)">
+        <input type="text" placeholder="Enter username" id="abc">
+        <input type="password" placeholder="Enter password" id="pass">
+        <input type="submit" id="submitBtn">
+    </form>
+
+    <script>
+        let username = document.querySelector("#abc");
+        let pass = document.querySelector("#pass");
+
+        let checkLogin = (event) => {
+            event.preventDefault(); // stop refresh
+
+            if (username.value === "abc" && pass.value === "abcd") {
+                console.log("Welcome..");
+            }
+            else {
+                console.log("Something went wrong.");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

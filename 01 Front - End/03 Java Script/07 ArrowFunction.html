@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrow Function</h1>
+
+    <script>
+
+        //defualt without return type
+        var add = () => {
+            document.write("addition : 4 + 5 = " +(4+5)+"<br>");
+        }
+        add();
+
+        //defualt with return type
+        var sub = () =>{
+            return 6-5;
+        }
+
+        document.writeln("sub : 6-5 = " +sub()+"<br>")
+
+        
+        //Parameterized without return type
+        var mul = (a, b) => {
+            document.write("multiplication : "+ a+ "* "+b+ " = "+ (a * b)+"</br>");
+        }
+        mul(4, 5);
+
+
+
+        //Parameterized with return type
+        var div = (a, b)=> {
+            return a / b;
+        }
+
+        var a = 20, b = 4;
+        var res = div(a, b);
+        
+        document.write("Division : " +a + " / "+b+" = " + res);
+    </script>
+</body>
+</html>
