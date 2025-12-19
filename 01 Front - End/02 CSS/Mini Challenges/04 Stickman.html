@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stickman Walking</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      height: 100vh;
+      background: #f0f0f0;
+      overflow: hidden;
+    }
+
+    .stickman {
+      position: relative;
+      width: 20px;
+      height: 100px;
+      animation: walk 4s linear infinite;
+    }
+
+   
+    .head {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 3px solid black;
+      position: absolute;
+      top: -50px;
+      left: -10px;
+      background: white;
+    }
+
+    
+    .body {
+      width: 3px;
+      height: 50px;
+      background: black;
+      position: absolute;
+      top: -10px;
+      left: 8px;
+    }
+
+    
+    .arm {
+      width: 3px;
+      height: 40px;
+      background: black;
+      position: absolute;
+      top: -5px;
+      transform-origin: top;
+    }
+
+    .arm.left {
+      left: -15px;
+      animation: swing 1s infinite alternate ease-in-out;
+    }
+
+    .arm.right {
+      left: 25px;
+      animation: swing 1s infinite alternate-reverse ease-in-out;
+    }
+
+   
+    .leg {
+      width: 3px;
+      height: 50px;
+      background: black;
+      position: absolute;
+      top: 40px;
+      transform-origin: top;
+    }
+
+    .leg.left {
+      left: 0;
+      animation: walkLeg 1s infinite alternate ease-in-out;
+    }
+
+    .leg.right {
+      left: 15px;
+      animation: walkLeg 1s infinite alternate-reverse ease-in-out;
+    }
+
+    
+    @keyframes swing {
+      from { transform: rotate(30deg); }
+      to   { transform: rotate(-30deg); }
+    }
+
+    @keyframes walkLeg {
+      from { transform: rotate(30deg); }
+      to   { transform: rotate(-30deg); }
+    }
+
+    @keyframes walk {
+      from { transform: translateX(-100px); }
+      to   { transform: translateX(100vw); }
+    }
+  </style>
+</head>
+<body>
+  <div class="stickman">
+    <div class="head"></div>
+    <div class="body"></div>
+    <div class="arm left"></div>
+    <div class="arm right"></div>
+    <div class="leg left"></div>
+    <div class="leg right"></div>
+  </div>
+</body>
+</html>

@@ -1,8 +1,9 @@
-*{
+* {
     margin: 0;
-    padding: 0 ;
+    padding: 0;
 }
-h1{
+
+h1 {
     font-size: 30px;
     font-weight: bold;
     font: optional;
@@ -11,4 +12,45 @@ h1{
     letter-spacing: 5px;
     text-align: center;
     text-transform: capitalize;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#h1 {
+    font-size: 32px;
+    /* pixels */
+}
+
+#p1 {
+    font-size: 1.2em;
+    /* relative to parent */
+}
+
+#p2 {
+    font-weight: bold;
+    /* or numbers: 100 → 900 */
+}
+
+#p3 {
+    font-style: italic;
+}
+
+#p4 {
+    line-height: 150px;
+    font-variant: small-caps;
+}
+
+#p5 {
+    font: italic small-caps bold 16px/1.5 "Times New Roman", serif;
+}
+
+#combine {
+    font: italic small-caps bold 16px/1.5 "Times New Roman", serif;
 }

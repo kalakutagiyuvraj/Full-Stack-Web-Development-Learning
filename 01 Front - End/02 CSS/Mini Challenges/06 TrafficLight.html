@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traffic Light Animation</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(45deg, black, rgb(57, 53, 53), black);
+    }
+
+    .traffic-light {
+      width: 100px;
+      height: 260px;
+      background: grey;
+      border-radius: 20px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .light {
+      width: 60px;
+      height: 60px;
+      background: black;
+      border-radius: 50%;
+      opacity: 0.3;
+    }
+
+    /* Animation */
+    .red {
+      animation: redLight 6s infinite;
+    }
+    .yellow {
+      animation: yellowLight 6s infinite;
+    }
+    .green {
+      animation: greenLight 6s infinite;
+    }
+
+    @keyframes redLight {
+      0%, 30% { background: red; opacity: 1; }
+      31%, 100% { background: red; opacity: 0.3; }
+    }
+
+    @keyframes yellowLight {
+      31%, 50% { background: yellow; opacity: 1; }
+      0%, 30%, 51%, 100% { background: yellow; opacity: 0.3; }
+    }
+    
+    @keyframes greenLight {
+      51%, 80% { background: limegreen; opacity: 1; }
+      0%, 50%, 81%, 100% { background: limegreen; opacity: 0.3; }
+    }
+  </style>
+</head>
+<body>
+  <div class="traffic-light">
+    <div class="light red"></div>
+    <div class="light yellow"></div>
+    <div class="light green"></div>
+  </div>
+</body>
+</html>

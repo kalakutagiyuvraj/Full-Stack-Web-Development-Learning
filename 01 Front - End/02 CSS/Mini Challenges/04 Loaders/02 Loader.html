@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loader Bar</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .loader-container {
+      width: 80%;
+      max-width: 600px;
+      height: 30px;
+      border: 2px solid black;
+      overflow: hidden;
+    }
+
+    .loader-bar {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(to right, #8a8aee, #0505fc);
+      animation: fillColor 5s infinite ease-in-out;
+    }
+
+    @keyframes fillColor {
+      0% { width: 0%; }
+      100% { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <h2>Loading Please wait...</h2>
+  <div class="loader-container">
+    <div class="loader-bar"></div>
+  </div>
+</body>
+</html>

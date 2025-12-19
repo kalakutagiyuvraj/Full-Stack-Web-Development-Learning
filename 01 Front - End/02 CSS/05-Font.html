@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS : Fonts</title>
     <link rel="stylesheet" href="05-Style.css">
 </head>
+
 <body>
+    <pre>
     <h1>We are learning Css fonts</h1>
     <h1>Secon h1</h1>
+    <h1>Lets check some common font Properties</h1>
+
+    font-family → sets the typeface.
+    p {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    You can list multiple fonts (fallbacks).
+    "sans-serif", "serif", "monospace" are generic families.
+    font-size → controls size of the text.
+    h1 {
+    font-size: 32px; /* pixels */
+    }
+    <h1 id="h1">Font Size</h1>
+    p {
+    font-size: 1.2em; /* relative to parent */
+    }
+    <p id="p1">Font Size</p>
+
+    font-weight → controls thickness.
+    h1 {
+    font-weight: bold; /* or numbers: 100 → 900 */
+    }
+    <p id="p2">font weight</p>
+    font-style → italic or normal.
+    em {
+    font-style: italic;
+    }
+    <p id="p3">font-style</p>
+
+    line-height → space between lines.
+
+    p {
+    line-height: 1.6;
+    }
+
+    <p id="p4">font line-height</p>
+
+    font-variant → small-caps.
+    h2 {
+    font-variant: small-caps;
+    }
+    
+    <p id="p5">font-variant</p>
+
+
+    🎨 Shorthand Property
+    Instead of writing separately, you can combine them:
+    p {
+    font: italic small-caps bold 16px/1.5 "Times New Roman", serif;
+    }
+
+    <p id="combine">Combining every Properties</p>
+
+    Order:
+    font-style → font-variant → font-weight → font-size/line-height → font-family
+
+    🌐 Using Google Fonts
+    To use custom fonts:
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> -->
+    body {
+    font-family: "Roboto", sans-serif;
+    }
+    </pre>
 </body>
+
 </html>

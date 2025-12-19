@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bouncing Ball Animation</title>
+<style>
+    body {
+        background: linear-gradient(96deg, white, black);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+        margin: 0;
+    }
+
+    .cont {
+        height: 200px;
+        width: 100vw;
+        background-color: yellowgreen;
+        position: relative;
+    }
+
+    /* Horizontal movement */
+    .wrapper {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        animation: moveX 4s linear infinite;
+    }
+
+    /* Ball */
+    .ball {
+        height: 50px;
+        width: 50px;
+        background-color: red;
+        border-radius: 50%;
+        border: 2px solid black;
+        position: absolute;
+        bottom: 0;
+        animation: bounce 1s ease-in-out infinite;
+    }
+
+    /* Horizontal translation */
+    @keyframes moveX {
+        0%   { transform: translateX(0); }
+        100% { transform: translateX(100vw); }
+    }
+
+    /* Vertical bounce */
+    @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-100px); }
+    }
+</style>
+</head>
+<body>
+    <div class="cont">
+        <div class="wrapper">
+            <div class="ball"></div>
+        </div>
+    </div>
+</body>
+</html>

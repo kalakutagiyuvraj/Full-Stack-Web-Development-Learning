@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS : Box-Shadow & Outline</title>
+  <style>
+    .shadow-box {
+      width: 150px;
+      height: 80px;
+      background: lightblue;
+      box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px 0;
+    }
+    .outline-btn {
+      padding: 10px 20px;
+      border: 2px solid blue;
+      outline: 3px dashed red;
+      background: #eef;
+      margin: 10px 0;
+    }
+    
+  </style>
+    <link rel="stylesheet" href="08-style.css">
+</head>
+<body>
+  <h1>CSS <code>box-shadow</code> & <code>outline</code></h1>
+
+  <h2>1. box-shadow</h2>
+  <p>
+    The <code>box-shadow</code> property adds a shadow around an element’s box.<br>
+    <b>Syntax:</b> <code>box-shadow: offset-x offset-y blur-radius spread-radius color;</code>
+  </p>
+
+  <div class="example">
+    <p><b>Example:</b></p>
+    <div class="shadow-box">Box with Shadow</div>
+    <code>box-shadow: 5px 5px 15px rgba(0,0,0,0.4);</code><br>
+    <!-- Creates a soft dark shadow at bottom-right -->
+  </div>
+
+  <h2>2. outline</h2>
+  <p>
+    The <code>outline</code> property draws a line <b>outside</b> the border.<br>
+    It doesn’t affect layout and is commonly used for focus styles.
+  </p>
+
+  <div class="example">
+    <p><b>Example:</b></p>
+    <button class="outline-btn">Button with Outline</button><br>
+    <code>outline: 3px dashed red;</code><br>
+    <!-- Blue border + red dashed outline outside -->
+  </div>
+
+  <h2>🔹 Quick Difference</h2>
+  <ul>
+    <li><b>box-shadow</b> → shadow effect (blurred, colored, offset).</li>
+    <li><b>outline</b> → simple line outside border, not rounded by border-radius.</li>
+  </ul>
+</body>
+</html>

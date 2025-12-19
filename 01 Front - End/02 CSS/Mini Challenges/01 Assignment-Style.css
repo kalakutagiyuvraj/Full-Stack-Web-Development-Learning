@@ -1,0 +1,135 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(45deg, black, gray, black);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #ffcc00;
+    margin: 10px 0 25px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Main Card */
+.container {
+    margin-bottom: 30px;
+    background: url("Images/Background.jpg") no-repeat center center / cover;
+    border: 5px solid rgb(180, 177, 177);
+    min-height: 85vh;
+    max-width: 50vw;
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 20px;
+    box-shadow: 12px 8px 20px rgba(17, 15, 15, 0.6);
+    position: relative;
+}
+
+.container img.logo {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    max-width: 100px;
+    border-radius: 8px;
+}
+
+.foodItems {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.foodItems .Items {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.foodItems .Items:hover {
+    transform: translateY(-5px);
+}
+
+
+.foodItems .Items img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s, opacity 0.4s;
+}
+
+.foodItems .Items:hover img {
+    transform: scale(1.05);
+    opacity: 0.3;
+}
+
+
+.foodItems .Items .info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.foodItems .Items:hover .info {
+    opacity: 1;
+}
+
+.foodItems .Items .info h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.foodItems .Items .info p:first-of-type {
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.foodItems .Items .info p:last-of-type {
+    margin: 0;
+    font-size: 13px;
+    color: #dddddd;
+}
+
+.foodItems {
+    gap: 15px;
+}
+
+.foodItems .Items {
+    width: 250px;
+    height: 250px;
+}

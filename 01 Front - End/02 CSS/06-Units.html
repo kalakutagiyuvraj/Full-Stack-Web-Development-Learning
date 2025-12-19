@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS : Units</title>
+</head>
+
+<body>
+    <div> 
+        <pre>
+        <h1>🔹 What are CSS Units? </h1>
+        CSS units define the measurement of values like length, size, spacing, positioning, etc. They tell the browser
+        how much or how big something should be.
+        Units are mainly divided into two categories:
+        Absolute Units → Fixed values that do not change depending on screen size.
+        Relative Units → Flexible values that depend on parent element, root element, or viewport.
+
+        🔹 Types of CSS Units
+        1. Absolute Units (fixed measurements, don’t scale with screen size)
+        px → Pixels, smallest unit on screen.
+        pt → Points, traditionally used in print (1pt = 1/72 inch).
+        pc → Picas, used in typography (1pc = 12pt).
+        in → Inches (1in = 96px).
+        cm → Centimeters.
+        mm → Millimeters
+
+        2. Relative Units (scale depending on environment)
+        a) Font-relative units
+        em → Relative to the font size of the element.
+        rem → Relative to the font size of the root element (usually <html>).
+        ex → Relative to the height of the lowercase "x" of the font.
+        ch → Relative to the width of the character "0" (zero) of the font.
+
+        b) Viewport-relative units
+        vw → Relative to 1% of the viewport width.
+        vh → Relative to 1% of the viewport height.
+        vmin → Relative to 1% of the smaller dimension (width or height).
+        vmax → Relative to 1% of the larger dimension (width or height).
+        svw, svh → Small viewport width/height (mobile friendly).
+        lvw, lvh → Large viewport width/height.
+        dvw, dvh → Dynamic viewport width/height (accounts for browser UI changes).
+        c) Container-relative units (CSS Containment Module, modern CSS)
+        cqw, cqh → Relative to 1% of container’s width/height.
+        cqi, cqb → Relative to 1% of container’s inline/block size.
+        cqmin → Relative to the smaller container dimension.
+        cqmax → Relative to the larger container dimension.
+
+        3. Percentage (%)
+        % → Relative to the parent element’s value (depends on property, e.g., width % depends on parent width,
+        font-size % depends on parent font-size).
+
+        4. Angle Units (used in rotation, gradients, etc.)
+        deg → Degrees (0–360).
+        grad → Gradians (400 units in a full circle).
+        rad → Radians (2π radians in a circle).
+        turn → Turns (1 turn = full circle).
+        5. Time Units (used in animations, transitions)
+        s → Seconds.
+        ms → Milliseconds.
+        6. Frequency Units (rarely used, for speech CSS)
+        Hz → Hertz.
+        kHz → Kilohertz.
+        7. Resolution Units (for media queries, printing)
+        dpi → Dots per inch.
+        dpcm → Dots per centimeter.
+        dppx → Dots per pixel unit (1dppx = 96dpi).
+        ✅ So in total, CSS units cover:
+        Absolute Lengths (px, pt, pc, in, cm, mm)
+        Relative Lengths (em, rem, ex, ch, vw, vh, vmin, vmax, svw, lvw, dvw, cqw, cqmin, etc.)
+        Percentage (%)
+        Angle Units (deg, rad, grad, turn)
+        Time Units (s, ms)
+        Frequency Units (Hz, kHz)
+        Resolution Units (dpi, dpcm, dppx)
+        </pre>
+    </div>
+</body>
+</html>

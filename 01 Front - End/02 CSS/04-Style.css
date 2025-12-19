@@ -16,3 +16,10 @@ div p{
     box-sizing: border-box;
 
 }
+/* 📄 Example in CSS */
+        .box {
+        width: 200px; /* content width */
+        padding: 20px; /* space inside */
+        border: 5px solid blue; /* border thickness */
+        margin: 15px; /* space outside */
+        }

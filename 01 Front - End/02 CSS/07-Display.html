@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS : Display Property</title>
+    <link rel="stylesheet" href="07-style.css">
+</head>
+
+<body>
+    <h1>CSS <code>display</code> Property - Theory</h1>
+
+    <p>The <code>display</code> property controls how an element is shown in the browser.
+        It defines the element’s <b>layout behavior</b> (block, inline, grid, flex, etc.).</p>
+
+    <h2>Common Values</h2>
+    <ul>
+        <li><b>block</b> → Takes full width, starts on new line. Examples: <code>&lt;div&gt;</code>,
+            <code>&lt;p&gt;</code>.
+        </li>
+        <li><b>inline</b> → Takes only needed width, does not break line. Examples: <code>&lt;span&gt;</code>,
+            <code>&lt;a&gt;</code>.
+        </li>
+        <li><b>inline-block</b> → Behaves like inline but allows width/height.</li>
+        <li><b>none</b> → Hides element completely (not in layout).</li>
+        <li><b>flex</b> → Enables Flexbox layout for arranging items.</li>
+        <li><b>grid</b> → Enables Grid layout for rows/columns.</li>
+    </ul>
+
+    <h2>Other Values</h2>
+    <ul>
+        <li><b>inline-flex</b> → Flexbox but inline-level.</li>
+        <li><b>inline-grid</b> → Grid but inline-level.</li>
+        <li><b>table</b>, <b>table-row</b>, <b>table-cell</b> → Behaves like table elements.</li>
+        <li><b>list-item</b> → Behaves like a list item (<code>&lt;li&gt;</code>).</li>
+    </ul>
+
+    <div class="note">
+        <b>Tip:</b> <code>display</code> only controls how the element is shown,
+        not its position (use <code>position</code>, <code>margin</code>, <code>padding</code> for that).
+    </div>
+
+
+</body>
+
+</html>

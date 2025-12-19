@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS : Loader Assignment</title>
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .loader-wrapper {
+      position: relative;
+      height: 250px;
+      width: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .loader {
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      border: 10px solid black;
+      border-left-color: white;
+      animation: rotation 2s linear infinite;
+      position: absolute;
+    }
+
+    .loader-text {
+      position: relative;
+      font-size: 24px;
+      color: black;
+      font-family: monospace;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid black; 
+      width: 0;
+      animation: typing 3s steps(7) infinite, blink 0.6s steps(7) infinite alternate;
+    }
+
+    @keyframes typing {
+      0% { width: 0;
+      color: black;}
+      50% { width: 7ch;
+      color: blue; }
+      100% { width: 0ch;
+      color: black; }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+
+    @keyframes rotation {
+      0% {
+        transform: rotate(0deg);
+        border-color: black;
+        border-left-color: white;
+      }
+      50% {
+        transform: rotate(180deg);
+        border-color: blue;
+        border-left-color: white;
+      }
+      100% {
+        transform: rotate(360deg);
+        border-color: black;
+        border-left-color: white;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="loader-wrapper">
+    <div class="loader"></div>
+    <h1 class="loader-text">Loading</h1>
+  </div>
+</body>
+</html>

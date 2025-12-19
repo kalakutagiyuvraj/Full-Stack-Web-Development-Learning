@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::before{
+            content: "👍 Before ";
+        }
+        h2::after{
+            content: "👍 After";
+        }
+        p::first-line{
+            color: yellow;
+        }
+        h2::first-letter{
+            color: purple;
+        }
+        p::selection{
+            background-color: black;
+            color: white;
+        }
+        
+        input::placeholder{
+            color: yellow;
+            background-color: green;
+            border: 2px solid red;
+            outline: none;
+        }
+        li::marker{
+            color: blue;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>welcome</h1>
+    <h2>welcome</h2>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit adipisci consectetur dolor laborum hic tenetur
+        ipsa nisi. Animi, ab ipsa atque eius nostrum repudiandae obcaecati laborum ipsum voluptas eos quisquam.</p>
+
+    <input type="text" placeholder="Enter teh name">
+
+
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+</body>
+
+</html>
+

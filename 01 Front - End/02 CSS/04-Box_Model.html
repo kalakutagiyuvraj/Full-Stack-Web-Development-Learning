@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS : Box Model</title>
     <link rel="stylesheet" href="04-Style.css">
 </head>
+
 <body>
     <h1>CSS : Box Model</h1>
     <p>In css every element have some box model</p>
@@ -16,6 +18,54 @@
     <div>
         <p>Demonstration</p>
     </div>
+    The Box Model in CSS describes how every element on a webpage is treated like a rectangular box. It consists of 4
+    main parts:
 
+    <div class="box">
+        Box
+    </div>
+
+    <div class="theory">
+        <pre>
+        The Box Model in CSS describes how every element on a webpage is treated like a rectangular box. It consists of
+        4 main parts:
+
+        🧱 CSS Box Model Layers
+        Content → The actual text, image, or other data inside the box.
+        Padding → The space between the content and the border (transparent area).
+        Border → The outline around the padding and content.
+        Margin → The space between this element’s border and other elements.
+
+        📐 Visual Representation
+        --------------------------------
+        | Margin                 |
+        | -----------------------------|
+        | | Border            | |
+        | | --------------         | |
+        | | | Padding    | | |
+            --------------------------
+        | | | Content     | | |
+        | | --------------           | |
+        | ----------------------------  |
+        ----------------------------------
+
+        📄 Example in CSS
+        .box {
+        width: 200px; /* content width */
+        padding: 20px; /* space inside */
+        border: 5px solid blue; /* border thickness */
+        margin: 15px; /* space outside */
+        }
+
+
+        👉 In this case:
+        Content width = 200px
+        Padding adds 20px on each side
+        Border adds 5px on each side
+        Margin adds 15px outside
+        So, the total space taken by this box = 200 + (20+20) + (5+5) + (15+15) = 280px wide.
+        </pre>
+    </div>
 </body>
+
 </html>

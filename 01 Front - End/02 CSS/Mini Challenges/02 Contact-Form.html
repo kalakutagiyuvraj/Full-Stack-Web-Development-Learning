@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS : Assignment 2</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, black, grey, black);
+        }
+
+        .container {
+            border: 3px solid black;
+            border-radius: 3vh;
+            min-width: 70vw;
+            min-height: 70vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #myBtn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 10vh;
+            width: 15vw;
+            color: #dddddd;
+            font-size: 4vh;
+            background: linear-gradient(135deg, #000 0%, #444 40%, #666 60%, #000 100%);
+            border: 2px solid black;
+            border-radius: 10px;
+            transition: left 1s ease, transform 1s ease;
+            z-index: 2;
+        }
+
+        #myBtn:hover {
+            transform: translate(-50%, -55%);
+            box-shadow: 4px 4px 8px #dddddd;
+        }
+
+        .container.active #myBtn {
+            left: 25%;
+            transform: translate(-50%, -50%);
+        }
+
+        .main {
+            position: absolute;
+            top: 0;
+            right: -50%;
+            width: 50%;
+            height: 100%;
+            background: url("Images/Contact Us/background.jpg");
+            border-left: 3px solid black;
+            transition: right 1s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-bottom: 2vh;
+        }
+
+        .container.active .main {
+            right: 0;
+        }
+
+        .contactForm {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 90%;
+            width: 80%;
+        }
+
+        .contactForm .fields {
+            display: flex;
+            flex-direction: column;
+            margin-top: 30%;
+            gap: 2vh;
+        }
+
+        .contactForm .contact {
+            padding: 1vh;
+            font-size: 2vh;
+            border-radius: 5px;
+            border: 1px solid #333;
+            width: 100%;
+        }
+
+        .contactForm .submitBtn {
+            width: 40%;
+            height: 10%;
+            align-self: center;
+            background: linear-gradient(135deg, #222, #555, #222);
+            color: white;
+            padding: 1vh;
+            border-radius: 5px;
+            border: 2px solid black;
+            margin-bottom: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <button id="myBtn">Contact Us</button>
+
+        <div class="main" id="formBox">
+            <form class="contactForm">
+                <div class="fields">
+                    <input type="text" class="contact" placeholder="John Doe">
+                    <input type="email" class="contact" placeholder="example@gmail.com">
+                    <textarea class="contact" placeholder="Enter message here.."></textarea>
+                </div>
+                <button type="submit" class="submitBtn">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const btn = document.getElementById("myBtn");
+        const container = document.getElementById("container");
+
+        btn.addEventListener("click", () => {
+            container.classList.toggle("active");
+        });
+    </script>
+</body>
+
+</html>
